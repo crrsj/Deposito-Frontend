@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./script.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Cadastro de Produto</h2>
+        <form>
+          <div class="form-group">
+            <label for="nome">Nome do Produto</label>
+            <input type="text" id="nome" name="nome" required>
+          </div>
+          <div class="form-group">
+            <label for="imagem">Imagem do Produto (URL)</label>
+            <input type="text" id="imagem" name="imagem" required>
+          </div>
+          <div class="form-group">
+            <label for="quantidade">Quantidade</label>
+            <input type="number" id="quantidade" name="quantidade" required>
+          </div>
+          <div class="form-group">
+            <label for="valor">Valor (R$)</label>
+            <input type="number" id="valor" name="valor" step="0.01" required>
+          </div>
+          <div class="form-group">
+            <label for="estoque"> Estoque</label>
+            <input type="number" id="estoque" name="estoque">
+          </div>
+         
+          <div class="form-group">
+            <label for="status">Status</label>
+            <select id="status" name="status" required>
+              <option value="VENDER">Vender</option> 
+                   
+            </select>
+          </div>
+          <div class="form-buttons">
+            <button type="button" class="fancy-button" onclick="validarFormulario()" >Cadastrar </button>
+            <button type="submit" class="submit-button">Buscar</button>
+          </div>
+        </form>
+      </div>
+</body>
+<script src="./script.js"></script>
+</html>
